@@ -6,7 +6,7 @@ class Person(models.Model):
     last_name = models.CharField(max_length=30)
     newsletter_abo = models.BooleanField(default=True)
     email_address = models.EmailField(blank=True, null=True, default="")
-    account = models.FloatField(blank=True, null=True, default=None)
+    account = models.FloatField(blank=True, null=True, default=0.0)
 
 
 class Product(models.Model):
